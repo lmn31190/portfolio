@@ -1,6 +1,6 @@
 .hero {
-  height: calc(100vh - 100px);
-  background-color: linear-gradient(180deg, #0c0c1d, #111132);
+  height: 100vh;
+  background: url("./banner-bg.png");
   overflow: hidden;
   position: relative;
 
@@ -39,9 +39,18 @@
           font-weight: 700;
         }
 
-        button:nth-child(2){
-            background-color: #fff;
-            color: black;
+        button:hover{
+          border: 1px solid rebeccapurple;
+        }
+
+        button:nth-child(2) {
+          background-color: #fff;
+          color: black;
+        }
+
+        button:nth-child(2):hover {
+          background-color: transparent;
+          color: white;
         }
       }
 
@@ -53,18 +62,32 @@
     .imageContainer {
       height: 100%;
       position: absolute;
-      top: 0;
+      top: 25%;
       right: 0;
+      animation: test 5s ease infinite;
     }
 
-    .slidingTextContainer{
-        position: absolute;
-        font-size: 50vh;
-        bottom: -120px;
-        white-space: nowrap;
-        color: #ffffff09;
-        width: 50%;
-        font-weight: bold;
+    .slidingTextContainer {
+      position: absolute;
+      font-size: 50vh;
+      bottom: -120px;
+      white-space: nowrap;
+      color: #ffffff09;
+      width: 50%;
+      font-weight: bold;
     }
+  }
+}
+
+@keyframes test {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(25px);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }

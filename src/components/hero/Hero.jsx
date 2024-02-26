@@ -1,5 +1,8 @@
+import Navbar from "../navbar/Navbar";
 import "./hero.scss";
 import { motion } from "framer-motion";
+
+
 
 const textVariants = {
   initial: {
@@ -24,23 +27,12 @@ const textVariants = {
   },
 };
 
-const sliderVariants = {
-  initial: {
-    x: 0,
-  },
-  animate: {
-    x: "-220%",
-    transition: {
-      repeat: Infinity,
-      repeatType: "mirror",
-      duration: 20,
-    },
-  },
-};
 
 const Hero = () => {
   return (
+  
     <div className="hero">
+      <Navbar />
       <div className="wrapper">
         <motion.div
           className="textContainer"
@@ -68,11 +60,11 @@ const Hero = () => {
             alt=""
           />
         </motion.div>
-        <motion.div className="slidingTextContainer" variants={sliderVariants} initial="initial" animate="animate">
+        {/* <motion.div className="slidingTextContainer" variants={sliderVariants} initial="initial" animate="animate">
           Writer content Creator Influencer
-        </motion.div>
+        </motion.div> */}
         <div className="imageContainer">
-          {/* <img src="/hero.png" alt="" /> */}
+          <img src="/header-img.svg" alt="" />
         </div>
       </div>
     </div>

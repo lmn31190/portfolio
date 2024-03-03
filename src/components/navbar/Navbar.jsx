@@ -18,6 +18,7 @@ const Navbar = () => {
         <div>
           <a href="#" className="social">
             <img src="/linkedin.png" alt="" />
+            <img src="/github.png" alt="" />
             <img src="/gmail.png" alt="" />
           </a>
         </div>

@@ -60,9 +60,6 @@ const Hero = () => {
             alt=""
           />
         </motion.div>
-        {/* <motion.div className="slidingTextContainer" variants={sliderVariants} initial="initial" animate="animate">
-          Writer content Creator Influencer
-        </motion.div> */}
         <div className="imageContainer">
           <img src="/header-img.svg" alt="" />
         </div>

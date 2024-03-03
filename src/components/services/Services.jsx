@@ -2,6 +2,8 @@ import { useRef } from "react";
 import "./services.scss";
 import { motion, useInView } from "framer-motion";
 
+
+
 const variants = {
   initial: {
     x: -500,
@@ -39,7 +41,7 @@ const Services = () => {
         initial="initial"
         // whileInView="animate"
         ref={ref}
-        animate={isInView && "animate"}
+        animate={"animate"}
       >
         <div className="title">
           <img src="/people.webp" alt="" />
@@ -60,7 +62,7 @@ const Services = () => {
         initial="initial"
         // whileInView="animate"
         ref={ref}
-        animate={isInView && "animate"}
+        animate={"animate"}
       >
         <motion.div
           className="box"

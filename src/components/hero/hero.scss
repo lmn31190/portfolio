@@ -1,3 +1,5 @@
+@import "../../app.scss";
+
 .hero {
   height: 100vh;
   background: url("./banner-bg.png");
@@ -17,6 +19,14 @@
       gap: 40px;
       width: 50%;
 
+      @include mobile {
+        height: 50%;
+        width: 100%;
+        gap: 20px;
+        align-items: center;
+        text-align: center;
+      }
+
       h2 {
         font-size: 30px;
         color: rebeccapurple;
@@ -25,6 +35,10 @@
 
       h1 {
         font-size: 88px;
+
+        @include mobile {
+          font-size: 30px;
+        }
       }
 
       .buttons {
@@ -39,7 +53,7 @@
           font-weight: 700;
         }
 
-        button:hover{
+        button:hover {
           border: 1px solid rebeccapurple;
         }
 
@@ -65,16 +79,22 @@
       top: 25%;
       right: 0;
       animation: test 5s ease infinite;
-    }
 
-    .slidingTextContainer {
-      position: absolute;
-      font-size: 50vh;
-      bottom: -120px;
-      white-space: nowrap;
-      color: #ffffff09;
-      width: 50%;
-      font-weight: bold;
+      @include mobile {
+        height: 50%;
+        width: 100%;
+        top: unset;
+        bottom: 1%;
+      }
+
+      img {
+        @include mobile {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+
+        }
+      }
     }
   }
 }

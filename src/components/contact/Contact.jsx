@@ -52,7 +52,7 @@ const contact = () => {
       whileInView="animate"
     >
       <motion.div className="textContainer" variants={variants}>
-        <motion.h1 variants={variants}>Travaillons ensemble !</motion.h1>
+        <motion.h1 variants={variants}>Travaillons ensemble</motion.h1>
         <motion.div className="item" variants={variants}>
           <h2>Mail</h2>
           <span>contact@louismonie.fr</span>
@@ -74,8 +74,8 @@ const contact = () => {
           transition={{ delay: 3, duration: 1 }}
         >
           <svg
-            width="450px"
-            height="450px"
+            width="100%"
+            height="100%"
             viewBox="0 0 48 48"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -100,7 +100,7 @@ const contact = () => {
         >
           <input type="text" required placeholder="Nom complet" name="name" />
           <input type="email" name="email" required placeholder="Email" />
-          <textarea rows={8} name="email" placeholder="Message"></textarea>
+          <textarea style={{resize: "none"}} rows={8} name="email" placeholder="Message"></textarea>
           <button>Envoyer</button>
         </motion.form>
         {error && "Erreur"}

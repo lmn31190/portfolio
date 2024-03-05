@@ -1,4 +1,4 @@
-html {
+html:not(#Contact) {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
 }

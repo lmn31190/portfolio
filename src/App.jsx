@@ -3,7 +3,7 @@ import "./app.scss";
 import Hero from "./components/hero/Hero";
 import Parallax from "./components/parallax/Parallax";
 import Services from "./components/services/Services";
-import Contact from "./components/contact/contact";
+import Contact from "./components/contact/Contact";
 
 const App = () => {
   return (

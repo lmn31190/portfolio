@@ -24,8 +24,6 @@ const variants = {
 const Services = () => {
   const ref = useRef();
 
-  const isInView = useInView(ref, {margin: "-100px"})
-
   return (
     <motion.div className="services" variants={variants}>
       <motion.div className="textContainer" variants={variants}>
@@ -64,40 +62,6 @@ const Services = () => {
         ref={ref}
         animate={"animate"}
       >
-        <motion.div
-          className="box"
-          whileHover={{
-            background: "lightgray",
-            color: "black",
-            cursor: "pointer",
-          }}
-        >
-          <h2>Branding</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
-            culpa! Provident quisquam accusamus quod quidem doloribus
-            dignissimos qui accusantium sunt, cum officia odit quo quos ducimus
-            saepe suscipit molestiae natus.
-          </p>
-          <button>Go</button>
-        </motion.div>
-        <motion.div
-          className="box"
-          whileHover={{
-            background: "lightgray",
-            color: "black",
-            cursor: "pointer",
-          }}
-        >
-          <h2>Branding</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
-            culpa! Provident quisquam accusamus quod quidem doloribus
-            dignissimos qui accusantium sunt, cum officia odit quo quos ducimus
-            saepe suscipit molestiae natus.
-          </p>
-          <button>Go</button>
-        </motion.div>
         <motion.div
           className="box"
           whileHover={{

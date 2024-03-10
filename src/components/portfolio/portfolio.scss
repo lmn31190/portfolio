@@ -27,14 +27,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 20%;
+    padding-top: 20px;
     height: 100%;
     width: 100%;
     overflow: hidden;
 
+    @include tablet{
+      padding-top: 20%;
+    }
+
     .wrapper {
       max-width: 90vw;
-
       height: 100%;
       margin: auto;
       display: flex;
@@ -100,12 +103,14 @@
              }
         }
 
-        button{
+        a{
             background-color: orange;
             border: none;
             border-radius: 10px;
             width: 200px;
             padding: 10px;
+            color: black;
+            text-align: center;
             cursor: pointer;
         }
       }

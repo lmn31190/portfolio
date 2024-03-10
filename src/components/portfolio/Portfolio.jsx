@@ -9,24 +9,28 @@ const items = [
     title: "Next Ecommerce",
     img: "/next-ecommerce.png",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    url:"https://next-ecommerce-front-seven.vercel.app/"
   },
   {
     id: 2,
     title: "React Ecommerce",
     img: "/react-ecommerce.png",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    url:"https://ecommerce-react31.netlify.app/"
   },
   {
     id: 3,
     title: "The restaut",
     img: "/restaut.png",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    url:"https://the-resto.netlify.app/"
   },
   {
     id: 4,
     title: "La montagne",
     img: "/mountain.png",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    url:"https://mountain-react.netlify.app/"
   },
 ];
 
@@ -49,7 +53,7 @@ const Single = ({ item }) => {
           <motion.div className="textContainer" style={{y}}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <button>Voir démo</button>
+            <a target="_blank" href={item.url}>Voir démo</a>
           </motion.div>
         </div>
       </div>

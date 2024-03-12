@@ -80,10 +80,10 @@ const Portfolio = () => {
   // });
 
   return (
-    <div className="portfolio" ref={ref}>
+    <div className="portfolio" >
       <div className="progress">
         <h1>Mes réalisations</h1>
-        <div style={{ scaleX }} className="progressBar"></div>
+        {/* <div style={{ scaleX }} className="progressBar"></div> */}
       </div>
       {items.map((item) => (
         <Single item={item} key={item.id} />

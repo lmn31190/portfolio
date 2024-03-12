@@ -8,7 +8,7 @@ import Contact from "./components/contact/Contact";
 const App = () => {
   return (
     <div>
-      <section id="Accueil">
+      {/* <section id="Accueil">
         <Hero />
       </section>
       <section id="Services">
@@ -19,11 +19,11 @@ const App = () => {
       </section>
       <section id="Portfolio">
         <Parallax type="portfolio" />
-      </section>
+      </section> */}
       <Portfolio />
-      <section id="Contact">
+      {/* <section id="Contact">
         <Contact />
-      </section>
+      </section> */}
     </div>
   );
 };

@@ -1,4 +1,5 @@
 html:not(#Contact) {
+  scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
 }
 
@@ -25,7 +26,7 @@ a {
 
 section {
   height: 100vh;
-  scroll-snap-align: start;
+  // scroll-snap-align: start;
 }
 
 @mixin miniMobile {

@@ -47,7 +47,7 @@ const Single = ({ item }) => {
     <section>
       <div className="container">
         <div className="wrapper">
-          <div className="imgContainer" ref={ref}>
+          <div className="imgContainer" >
             <a href={item.url}>
             <img src={item.img} alt="" />
             </a>

@@ -54,11 +54,10 @@ const Single = ({ item }) => {
           <div className="textContainer">
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <form action={item.url} target="_blank">
-              <button type="submit">
-                Voir démoo
-              </button>
-            </form>
+              <a href={item.url}>
+                Voir démo
+              </a>
+
           </div>
         </div>
       </div>

@@ -13,7 +13,12 @@ html:not(#Contact) {
 body {
   background-color: #0c0c1d;
   color: lightgray;
+  
+  button, a{
+    position: relative;
+  }
 }
+
 a {
   text-decoration: none;
   color: inherit;

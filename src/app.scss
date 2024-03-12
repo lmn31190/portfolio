@@ -1,5 +1,5 @@
 html:not(#Contact) {
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
   scroll: smooth;
 }
 

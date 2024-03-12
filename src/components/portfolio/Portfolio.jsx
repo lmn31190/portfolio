@@ -2,6 +2,7 @@ import { useRef } from "react";
 import "./portfolio.scss";
 
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const items = [
   {
@@ -9,28 +10,28 @@ const items = [
     title: "Next Ecommerce",
     img: "/next-ecommerce.png",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    url:"https://next-ecommerce-front-seven.vercel.app/"
+    url: "https://next-ecommerce-front-seven.vercel.app/",
   },
   {
     id: 2,
     title: "React Ecommerce",
     img: "/react-ecommerce.png",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    url:"https://ecommerce-react31.netlify.app/"
+    url: "https://ecommerce-react31.netlify.app/",
   },
   {
     id: 3,
     title: "The restaut",
     img: "/restaut.png",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    url:"https://the-resto.netlify.app/"
+    url: "https://the-resto.netlify.app/",
   },
   {
     id: 4,
     title: "La montagne",
     img: "/mountain.png",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    url:"https://mountain-react.netlify.app/"
+    url: "https://mountain-react.netlify.app/",
   },
 ];
 
@@ -43,7 +44,7 @@ const Single = ({ item }) => {
 
   const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
   return (
-    <section >
+    <section>
       <div className="container">
         <div className="wrapper">
           <div className="imgContainer" ref={ref}>
@@ -53,7 +54,11 @@ const Single = ({ item }) => {
           <div className="textContainer">
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <a href={item.url}>Voir démo</a>
+            <form action={item.url} target="_blank">
+              <button type="submit">
+                Voir démoo
+              </button>
+            </form>
           </div>
         </div>
       </div>

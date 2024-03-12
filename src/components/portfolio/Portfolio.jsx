@@ -51,14 +51,14 @@ const Single = ({ item }) => {
             <img src={item.img} alt="" />
           </div>
 
-          <div className="textContainer">
+          <a  href={item.url} className="textContainer">
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
               <a href={item.url}>
                 Voir démo
               </a>
 
-          </div>
+          </a>
         </div>
       </div>
     </section>

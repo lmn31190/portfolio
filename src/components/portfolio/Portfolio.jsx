@@ -50,11 +50,11 @@ const Single = ({ item }) => {
             <img src={item.img} alt="" />
           </div>
 
-          <motion.div className="textContainer" style={{y}}>
+          <div className="textContainer">
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
             <a href={item.url}>Voir démo</a>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

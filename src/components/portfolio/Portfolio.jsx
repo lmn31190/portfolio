@@ -1,7 +1,7 @@
 // import { useRef } from "react";
 import "./portfolio.scss";
 
-// import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import { Link } from "react-router-dom";
 
 const items = [
@@ -36,18 +36,18 @@ const items = [
 ];
 
 const Single = ({ item }) => {
-  // const ref = useRef();
-  // const { scrollYProgress } = useScroll({
-  //   target: ref,
-  //   // offset: ["start start", "end start"]
-  // });
+  const ref = useRef();
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    // offset: ["start start", "end start"]
+  });
 
-  // const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
+  const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
   return (
     <section>
       <div className="container">
         <div className="wrapper">
-          <div className="imgContainer" >
+          <div className="imgContainer" ref={ref}>
             <a href={item.url}>
             <img src={item.img} alt="" />
             </a>
@@ -68,22 +68,22 @@ const Single = ({ item }) => {
 };
 
 const Portfolio = () => {
-  // const ref = useRef();
-  // const { scrollYProgress } = useScroll({
-  //   target: ref,
-  //   offset: ["end end", "start start"],
-  // });
+  const ref = useRef();
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    // offset: ["end end", "start start"],
+  });
 
-  // const scaleX = useSpring(scrollYProgress, {
-  //   stiffness: 100,
-  //   damping: 30,
-  // });
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+  });
 
   return (
-    <div className="portfolio" >
+    <div className="portfolio" ref={ref}>
       <div className="progress">
         <h1>Mes réalisations</h1>
-        {/* <div style={{ scaleX }} className="progressBar"></div> */}
+        <div style={{ scaleX }} className="progressBar"></div>
       </div>
       {items.map((item) => (
         <Single item={item} key={item.id} />

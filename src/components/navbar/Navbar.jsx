@@ -16,11 +16,11 @@ const Navbar = () => {
           Louis Monié
         </motion.span>
         <div>
-          <a className="social">
+          <div className="social">
             <a target="_blank" href="https://www.linkedin.com/in/louismonie/"><img src="/linkedin.png" alt="" /></a>
             <a target="_blank" href="https://github.com/lmn31190"><img src="/github.png" alt="" /></a>
             <a href="#Contact"><img src="/gmail.png" alt="" /></a>
-          </a>
+          </div>
         </div>
       </div>
     </div>

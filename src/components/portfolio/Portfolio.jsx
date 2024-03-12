@@ -47,7 +47,7 @@ const Single = ({ item }) => {
     <section>
       <div className="container">
         <div className="wrapper">
-          <div className="imgContainer" >
+          <div className="imgContainer" ref={ref}>
             <a href={item.url}>
             <img src={item.img} alt="" />
             </a>
@@ -80,7 +80,7 @@ const Portfolio = () => {
   // });
 
   return (
-    <div className="portfolio" >
+    <div className="portfolio" ref={ref}>
       <div className="progress">
         <h1>Mes réalisations</h1>
         {/* <div style={{ scaleX }} className="progressBar"></div> */}

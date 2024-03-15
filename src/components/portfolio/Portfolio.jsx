@@ -13,13 +13,6 @@ const items = [
     url: "https://next-ecommerce-front-seven.vercel.app/",
   },
   {
-    id: 2,
-    title: "React Ecommerce",
-    img: "/react-ecommerce.png",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    url: "https://ecommerce-react31.netlify.app/",
-  },
-  {
     id: 3,
     title: "The restaut",
     img: "/restaut.png",

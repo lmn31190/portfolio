@@ -22,7 +22,7 @@ const items = [
   {
     id: 3,
     title: "Cabinet Philae Conseil",
-    img: "/philae.JPG",
+    img: "/philae.png",
     desc: "Création d'un site web pour le cabinet Philae Toulouse",
     url: "https://philae-conseil.vercel.app",
   },

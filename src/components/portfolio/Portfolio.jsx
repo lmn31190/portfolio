@@ -21,10 +21,10 @@ const items = [
   },
   {
     id: 3,
-    title: "LM Phone",
-    img: "/iphone.png",
-    desc: "Projet site' web apple utilisant Vite, Gsap, animation 3d.",
-    url: "https://lmphone.vercel.app/",
+    title: "Cabinet Philae Conseil",
+    img: "/philae.png",
+    desc: "Création d'un site web pour le cabinet Philae Toulouse",
+    url: "https://philae-conseil.vercel.app",
   },
   {
     id: 4,
